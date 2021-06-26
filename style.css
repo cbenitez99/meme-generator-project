@@ -1,0 +1,26 @@
+img#meme-img {
+    height: 400px;
+    width: 400px;
+    
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+h1#title {
+    text-align: center;
+    font-style: italic;
+    color: silver;
+    background-image: linear-gradient(black, orange, black);
+}
+
+p {
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    
+}

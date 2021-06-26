@@ -3,20 +3,22 @@
     <head>
         <meta charset="utf-8">
         <title>Meme Generator</title>
-        <script defer src="scripts/index.js" charset="utf-8"></script>
         <script defer src="scripts/services.js" charset="utf-8"></script>
-
+        <script defer src="scripts/index.js" charset="utf-8"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 id="title">WELCOME TO THE RANDOM MEME GENERATOR</h1>
+        <h1 id="title">WELCOME TO MEME GEN 3000</h1>
 
-        <div id="meme-image-container">
-            <!--images go here-->
-        </div>
-
-        <button></button>
-
-
+        <ul id="memes-container">
+            <img id="meme-img" class="center">
+            <!--memes go here-->
+            </img>
+        </ul>
+        
+    <br>
+        <button id="button" class="center">Generate New Meme</button>
+    <br>
+        <p id="upvotes"></p>
     </body>
 </html>
