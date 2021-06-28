@@ -14,9 +14,17 @@ upvoteCount.addEventListener('mouseout', (e) => {
     e.target.style.color = "black"
 });
 
+// function invertColors(e){
+//     e.target.style.filter="invert(100%)"
+// }; 
+
 memeImg.addEventListener("dblclick", (e) => {
-    e.target.style.filter="invert(100%)"
-}); 
+    if(e.target.style.filter="invert(0%)"){
+        e.target.style.filter="invert(100%)"
+    }else if( e.target.style.filter = "invert(100%"){
+        e.target.style.filter="invert(0%)"
+    }
+});
 
 getMeme()
 
