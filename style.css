@@ -22,7 +22,12 @@ h1#title {
     background-image: linear-gradient(black, purple, black);
 }
 
-p {
+#meme-title {
+    text-align: center;
+    color: red;
+}
+
+#upvotes {
     text-align: center;
     font-size: 30px;
     /*
