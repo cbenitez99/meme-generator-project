@@ -17,7 +17,7 @@ upvoteCount.addEventListener('mouseout', (e) => {
 });
 
 
-
+//let global varibale? while loop (true/false)
 function invertImg (){
     memeImg.addEventListener("dblclick", (e) => {
         e.target.style.filter="invert(100%)"
