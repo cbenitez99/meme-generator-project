@@ -5,6 +5,7 @@ const upvoteCount = document.getElementById('upvotes');
 const memeTitle = document.getElementById("meme-title");
 const saveMemeBttn = document.getElementById("save-button")
 
+
 saveMemeBttn.addEventListener('click', saveMeme)
 
 reloadMemeBttn.addEventListener('click', getMeme)
@@ -17,21 +18,23 @@ upvoteCount.addEventListener('mouseout', (e) => {
     e.target.style.color = "black"
 });
 
-//let global varibale? while loop (true/false)
-//let inverted = e.target.style.filter="invert(100%)"
 function invertImg (){
     memeImg.addEventListener("dblclick", (e) => {
-        e.target.style.filter="invert(100%)"
+        e.target.style.filter=e.target.style.filter==="invert(100%)" ? "invert(0%)" : "invert(100%)"
+        console.log(e.target.style.filter);
     });
 };
 
 function saveMeme(){
-    
     const ol = document.getElementById("saved-memes")
-    const li = document.createElement("li");
+    const li = document.createElement("li")
+    
+    //li.createElement("#meme-links")
     li.textContent = meme
+    //li.appendChild(document.createElement("button"))
+    //li.textContent = title
     ol.appendChild(li)
-    li.addEventListener("click", (e) => {removeMeme(e)}); 
+    li.addEventListener("dblclick", (e) => {removeMeme(e)}); 
     
 };
 
