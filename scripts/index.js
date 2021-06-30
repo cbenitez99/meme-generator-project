@@ -5,9 +5,13 @@ const upvoteCount = document.getElementById('upvotes');
 const memeTitle = document.getElementById("meme-title");
 const saveMemeBttn = document.getElementById("save-button")
 
+
 saveMemeBttn.addEventListener('click', saveMeme)
 
+
+
 reloadMemeBttn.addEventListener('click', getMeme)
+
 
 //document.addEventListener('click', removeMeme)
 
@@ -34,17 +38,15 @@ function saveMeme(){
     const li = document.createElement("li");
     li.textContent = meme
     ol.appendChild(li)
+    li.addEventListener("click", () => {removeMeme(li)});  
 };
 
-// function removeMeme(){
-//     const ol = document.getElementById("saved-memes")
-//     const li = document.createElement("li");
-//     ol.removeChild(li)
-    
-// };
+function removeMeme(li){
+   li.remove()
+};
 
 
-
-saveMeme()
+removeMeme();
+saveMeme();
 getMeme();
 
