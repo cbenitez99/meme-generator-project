@@ -26,13 +26,17 @@ h1#title {
 
 #meme-title {
     text-align: center;
-    color: red;
+    color: greenyellow;
 }
 
 #upvotes {
     text-align: center;
     font-size: 30px;
-    /*
-    font-family: cursive;  
-    color:  */
+}
+
+ol#saved-memes {
+    font-size: 13px;
+    color: magenta;
+    position: fixed;
+
 }

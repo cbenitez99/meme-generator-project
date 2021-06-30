@@ -1,12 +1,15 @@
 console.log("All Files Connected!");
-//const ul = document.getElementById('memes-container')
 const memeImg = document.querySelector("#meme-img");
 const reloadMemeBttn = document.getElementById('button');
 const upvoteCount = document.getElementById('upvotes');
 const memeTitle = document.getElementById("meme-title");
+const saveMemeBttn = document.getElementById("save-button")
 
+saveMemeBttn.addEventListener('click', saveMeme)
 
 reloadMemeBttn.addEventListener('click', getMeme)
+
+//document.addEventListener('click', removeMeme)
 
 upvoteCount.addEventListener('mouseover', (e) => {
     e.target.style.color = "yellow"
@@ -25,5 +28,23 @@ function invertImg (){
     });
 };
 
-getMeme()
+
+function saveMeme(){
+    const ol = document.getElementById("saved-memes")
+    const li = document.createElement("li");
+    li.textContent = meme
+    ol.appendChild(li)
+};
+
+// function removeMeme(){
+//     const ol = document.getElementById("saved-memes")
+//     const li = document.createElement("li");
+//     ol.removeChild(li)
+    
+// };
+
+
+
+saveMeme()
+getMeme();
 

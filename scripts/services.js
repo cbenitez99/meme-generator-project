@@ -9,13 +9,14 @@ function getMeme() {
     })
     .then(res => res.json())
     .then(data => {
-        const meme = data.url
+        meme = data.url
         memeImg.src = meme
         upvoteCount.innerHTML = data.ups + " People have upvoted this meme 🔥 (hover me)"
         const title = data.title
         memeTitle.innerHTML = `${"Meme Title:  "}` + title 
         invertImg();
     });
+    
 };
 
 // function postMeme(body) {
