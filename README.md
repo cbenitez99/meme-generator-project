@@ -17,6 +17,6 @@ Open the terminal, go to the file directory of the copied repo, then type //=>
 Note: You may need to run 'npm install' to download dependencies.
 
 ## TYPES OF MEMES
-Read comments in ' services.js ' 
+Read commented line in ' services.js ' 
 
 
