@@ -1,6 +1,6 @@
 const wholesome = "/wholesomememes"
 //Commenting out  the '+' and `${wholesome}` from concatenating string will provide more edgy memes.
-const URL = "https://meme-api.herokuapp.com/gimme"  /* + `${wholesome}`*/
+const URL = "https://meme-api.herokuapp.com/gimme" + `${wholesome}`
 function getMeme() {
     return fetch(URL, {
         headers: {

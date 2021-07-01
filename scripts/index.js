@@ -9,6 +9,12 @@ saveMemeBttn.addEventListener('click', saveMeme)
 
 reloadMemeBttn.addEventListener('click', getMeme)
 
+function invertImg (){
+    memeImg.addEventListener("dblclick", (e) => {
+        e.target.style.filter=e.target.style.filter==="invert(100%)" ? "invert(0%)" : "invert(100%)"
+    });
+};
+
 upvoteCount.addEventListener('mouseover', (e) => {
     e.target.style.color = "yellow"
 });
@@ -16,12 +22,6 @@ upvoteCount.addEventListener('mouseover', (e) => {
 upvoteCount.addEventListener('mouseout', (e) => {
     e.target.style.color = "black"
 });
-
-function invertImg (){
-    memeImg.addEventListener("dblclick", (e) => {
-        e.target.style.filter=e.target.style.filter==="invert(100%)" ? "invert(0%)" : "invert(100%)"
-    });
-};
 
 function saveMeme(){
     const ol = document.getElementById("saved-memes")

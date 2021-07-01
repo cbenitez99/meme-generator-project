@@ -1,6 +1,6 @@
-* {
+/* * {
     padding:4; 
-}
+} */
 
 body {
     background-image: url('https://www.phoenixmag.com/wp-content/uploads/2020/10/AdobeStock_284425885-1280x945.jpeg');
@@ -40,9 +40,8 @@ h1#title {
 
 ol#saved-memes {
     font-size: 13px;
-    color: magenta;
+    color: yellow;
     position: fixed;
     height: 250px;
-    border: aqua;
     overflow-y: auto;
 }
