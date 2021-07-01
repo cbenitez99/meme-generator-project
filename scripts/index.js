@@ -27,8 +27,12 @@ function saveMeme(){
     const ol = document.getElementById("saved-memes")
     const li = document.createElement("li")
     const liButton = document.createElement("button")
+    const a = document.createElement("a")
+    a.innerText = meme
+    a.href = meme
     liButton.innerHTML = "x"
-    li.textContent = meme
+    li.appendChild(a) 
+    a.target = "_blank"
     ol.appendChild(li)
     li.appendChild(liButton)
     liButton.addEventListener("click", (e) => removeMeme(e)); 
