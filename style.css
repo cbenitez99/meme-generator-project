@@ -40,6 +40,7 @@ ol#saved-memes {
     position: fixed;
     height: 250px;
     overflow-y: auto;
+    border: solid 10px;
 }
 
 a {
