@@ -14,9 +14,7 @@ This projet generates random memes from a Reddit API!(Does not include spoilers 
 Open the terminal, go to the file directory of the copied repo, then type //=>     
 ' open index.html '  
 
-Note: You may need to run 'npm install' to download dependencies.
-
 ## TYPES OF MEMES
-Read commented line in ' services.js ' 
+Read commented line in ' scripts/services.js ' 
 
 
