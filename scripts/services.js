@@ -16,5 +16,4 @@ function getMeme() {
         memeTitle.innerHTML = `${"Meme Title:  "}` + title 
         invertImg();
     });
-    
 };
