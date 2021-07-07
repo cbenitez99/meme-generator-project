@@ -5,9 +5,19 @@ const upvoteCount = document.getElementById('upvotes');
 const memeTitle = document.getElementById("meme-title");
 const saveMemeBttn = document.getElementById("save-button")
 
-saveMemeBttn.addEventListener('click', saveMeme)
+document.addEventListener("DOMContentLoaded", () => {
+    saveMemeBttn.addEventListener('click', saveMeme)
+    
+    reloadMemeBttn.addEventListener('click', getMeme)
 
-reloadMemeBttn.addEventListener('click', getMeme)
+    upvoteCount.addEventListener('mouseover', (e) => {
+        e.target.style.color = "yellow"
+    });
+    
+    upvoteCount.addEventListener('mouseout', (e) => {
+        e.target.style.color = "black"
+    });
+})
 
 function invertImg (){
     memeImg.addEventListener("dblclick", (e) => {
@@ -15,21 +25,13 @@ function invertImg (){
     });
 };
 
-upvoteCount.addEventListener('mouseover', (e) => {
-    e.target.style.color = "yellow"
-});
-
-upvoteCount.addEventListener('mouseout', (e) => {
-    e.target.style.color = "black"
-});
-
-function saveMeme(){
+function saveMeme(e){
     const ol = document.getElementById("saved-memes")
     const li = document.createElement("li")
     const liButton = document.createElement("button")
     const a = document.createElement("a")
-    a.innerText = meme
-    a.href = meme
+    a.innerText = document.querySelector("#meme-title").innerText
+    a.href = document.querySelector("img").src
     liButton.innerHTML = "x"
     li.appendChild(a) 
     a.target = "_blank"
@@ -42,7 +44,7 @@ function removeMeme(e){
     e.target.parentNode.remove()
 };
 
-removeMeme();
-saveMeme();
-getMeme();
 
+//fetch
+//scope
+//hoisitng

@@ -9,10 +9,9 @@ function getMeme() {
     })
     .then(res => res.json())
     .then(data => {
-        meme = data.url
-        memeImg.src = meme
+        memeImg.src = data.url
         upvoteCount.innerHTML = data.ups + " People have upvoted this meme 🔥 (hover me)"
-        title = data.title
+        const title = data.title
         memeTitle.innerHTML = `${"Meme Title:  "}` + title 
         invertImg();
     });
