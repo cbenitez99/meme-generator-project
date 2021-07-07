@@ -7,7 +7,7 @@ const saveMemeBttn = document.getElementById("save-button")
 
 document.addEventListener("DOMContentLoaded", () => {
     saveMemeBttn.addEventListener('click', saveMeme)
-    
+
     reloadMemeBttn.addEventListener('click', getMeme)
 
     upvoteCount.addEventListener('mouseover', (e) => {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     upvoteCount.addEventListener('mouseout', (e) => {
         e.target.style.color = "black"
     });
-})
+});
 
 function invertImg (){
     memeImg.addEventListener("dblclick", (e) => {
