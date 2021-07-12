@@ -7,7 +7,7 @@ function getMeme() {
             "Accept" : "application/json"
         }
     })
-    .then(res => res.json())
+    .then(res => res.json()) 
     .then(data => {
         memeImg.src = data.url
         upvoteCount.innerHTML = data.ups + " People have upvoted this meme 🔥 (hover me)"

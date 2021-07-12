@@ -39,6 +39,7 @@ ol#saved-memes {
     color: yellow;
     position: fixed;
     height: 250px;
+    width: 250px;
     overflow-y: auto;
     border: solid 10px;
 }

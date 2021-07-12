@@ -25,7 +25,7 @@ function invertImg (){
     });
 };
 
-function saveMeme(e){
+function saveMeme(){
     const ol = document.getElementById("saved-memes")
     const li = document.createElement("li")
     const liButton = document.createElement("button")
@@ -43,8 +43,3 @@ function saveMeme(e){
 function removeMeme(e){
     e.target.parentNode.remove()
 };
-
-
-//fetch
-//scope
-//hoisitng
